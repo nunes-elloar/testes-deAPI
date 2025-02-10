@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  
+}
+button{
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  color: pink;
+  border: 2px solid rgb(255, 71, 102);
+  border-radius: 5px;
+}
+
+img{
+    width: 350px;
+}
+img:hover{
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+    cursor: pointer;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+    25%{
+        transform: translateX(-15px);
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateX(-10px);
+       
+    }
+    75%{
+        transform: translateX(-15px);
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(-15px);
+        transform: translateY(-10px);
+    }
+}
+#gatos{
+    text-align: center;
+    width: 80%;
+    font-size: 1.2rem;
+}
